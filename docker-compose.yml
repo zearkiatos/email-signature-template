@@ -6,6 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: email-signature-template
+    environment:
+      - PORT=80
     volumes:
       - "./src:/usr/share/nginx/html"
     ports:
